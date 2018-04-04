@@ -1,0 +1,101 @@
+TransactionTime,Description,Amount,Category,Owner
+29-Jan-04,Spice Rack Restaurant Seattle Wa,35.81,EATO,Bob
+29-Jan-04,Chesterfield Pharmacy Seattle Wa,26.22,MED,Both
+28-Jan-04,Usps 5476210012 Seattle Wa,18.54,GIFTS,Alice
+28-Jan-04,Chengdu Chinese Buffet Bellevue Wa,6,EATO,Bob
+28-Jan-04,Univ Bookstore 0001 Seattle Wa,435.15,TOYS,Alice
+27-Jan-04,Shell Oil 27440052002 Seattle Wa,16.43,TRANS,Both
+27-Jan-04,Mighty Leaf Tea 415-331-3409 Ca,20.85,GROC,Alice
+27-Jan-04,Viet-wah Supermkt Sj7 Seattle Wa,17.78,GROC,Both
+26-Jan-04,The Palace Kitchen Seattle Wa,85.23,EATO,Bob
+26-Jan-04,Virgin Mobile Usa 888-322-1122 Tx,20,COMM,Alice
+26-Jan-04,Am Trans 3662110905361 Seattle Wa,152.4,EATO,Alice
+26-Jan-04,Am Trans 3662110905360 Seattle Wa,83.8,TRANS,Bob
+26-Jan-04,Union St Red Apple Sj7 Seattle Wa,7.68,TRANS,Both
+23-Jan-04,Amtrak Seattle Wa Wa,53.55,TRANS,Alice
+23-Jan-04,Kozue Japanese Res Seattle Wa,12.34,EATO,Alice
+23-Jan-04,Top Pot Doughnuts 5th Seattle Wa,8.99,EATO,Alice
+23-Jan-04,Stellas Trattoria Seattle Wa,16.68,EATO,Alice
+22-Jan-04,Vs Ipo Dept Licen01 Of 360-6641487 Wa,98.75,TRANS,Both
+22-Jan-04,Hmf*harpers Magazine 800-444-4653 Ny,14,HOME,Bob
+22-Jan-04,Cafe Lago Seattle Wa,46.72,EATO,Both
+21-Jan-04,Jiffy Lube #2051 Seattle Wa,44.86,TRANS,Both
+21-Jan-04,Larry's Market #014sj7 Seattle Wa,35.61,GROC,Both
+20-Jan-04,Trader Joe's #00001370 Seattle Wa,26.46,GROC,Both
+20-Jan-04,Thanh Vi #2 Seattle Wa,13.81,EATO,Both
+20-Jan-04,Kanishka Cuisine Of In Redmond Wa,35.39,EATO,Bob
+16-Jan-04,Bahn Thai Restaurant Seattle Wa,38.68,EATO,Alice
+14-Jan-04,Taj Palace Bellevue Wa,30.75,EATO,Bob
+13-Jan-04,Thin Pan Kirkland Wa,36,EATO,Bob
+13-Jan-04,Wal Mart Renton Wa,48.11,EATO,Alice
+13-Jan-04,Viet-wah Supermkt Sj7 Seattle Wa,13.01,GROC,Both
+12-Jan-04,Dahlia Lounge Seattle Wa,15.39,EATO,Alice
+12-Jan-04,Northeast Vet Hospital Seattle Wa,78.88,MED,Both
+12-Jan-04,Nordstrom-rack #0016 Seattle Wa,13.86,CLOTHES,Alice
+12-Jan-04,Tango & Tapas Rest And Seattle Wa,113.99,EATO,Bob
+26-Feb-04,The Broadway Grill Seattle Wa,54.01,EATO,Bob
+23-Feb-04,Shell Oil 27440052002 Seattle Wa,17.59,TRANS,Both
+23-Feb-04,Il Terrazzo Carmine Seattle Wa,115.23,EATO,Bob
+23-Feb-04,Uwajimaya (seattle) Seattle Wa,58.58,GROC,Both
+23-Feb-04,Elects Boutique #323 Seattle Wa,54.39,TOYS,Bob
+17-Feb-04,Malay Satay Hut Redmond Wa,28.37,EATO,Bob
+17-Feb-04,Blue C Sushi Seattle Wa,17.85,EATO,Both
+17-Feb-04,The Flower Lady Seattle Wa,9.79,HOME,Alice
+17-Feb-04,Viet-wah Supermkt Sj7 Seattle Wa,5.73,GROC,Both
+17-Feb-04,Cafe Flora Seattle Wa,30.26,EATO,Both
+17-Feb-04,Uwajimaya (seattle) Seattle Wa,12.5,GROC,Bob
+17-Feb-04,Bagel Oasis 1 Seattle Wa,7.6,EATO,Alice
+17-Feb-04,The Broadway Grill Seattle Wa,41.89,EATO,Bob
+13-Feb-04,Le Fournil Ltd Seattle Wa,8.64,EATO,Alice
+12-Feb-04,Joseph Schmidt Confect San Francisco Ca,51.5,EATO,Alice
+12-Feb-04,Pln*priceline Air Tkt 800-340-0575 Ct,428.55,TRAVEL,Alice
+10-Feb-04,Meskel Ethiopian Resta Seattle Wa,26.89,EATO,Bob
+9-Feb-04,Uwajimaya (seattle) Seattle Wa,7.32,GROC,Bob
+9-Feb-04,Qfc #5807 S1r Seattle Wa,44.9,GROC,Bob
+9-Feb-04,Qfc #5807 S1r Seattle Wa,66.19,GROC,Alice
+9-Feb-04,Union St Red Apple Sj7 Seattle Wa,16.83,GROC,Both
+2-Feb-04,Holiday Inns Hotel-chp Chapel Hill Nc,119.15,TRAVEL,Alice
+2-Feb-04,Viet-wah Supermkt Sj7 Seattle Wa,4.25,GROC,Bob
+2-Feb-04,Piatti Seattle Seattle Wa,104.62,EATO,Bob
+1-Apr-04,Le Fournil Ltd Seattle Wa,7.64,EATO,Alice
+29-Mar-04,Loews #470 Meridian Seattle Wa,18,HOME,Both
+29-Mar-04,Petsmart 00003756 Seattle Wa,60.31,GROC,Both
+29-Mar-04,Schuck's #431900043190 Seattle Wa,3.26,TRANS,Both
+29-Mar-04,Schuck's #430800043083 Seattle Wa,11.96,TRANS,Both
+29-Mar-04,Qfc #5849 S1r Seattle Wa,17.98,GROC,Both
+29-Mar-04,Macrina Bakery Seattle Wa,28.77,EATO,Both
+29-Mar-04,Whole Food Market Seattle Wa,148.82,GROC,Both
+26-Mar-04,"Dilettante Chocolates, Seattle Wa",8.38,EATO,Alice
+23-Mar-04,Thanh Vi #2 Seattle Wa,13.33,EATO,Both
+22-Mar-04,Amazon.com *superstor Amazon.com Wa,3.54,TOYS,Both
+22-Mar-04,Texaco Inc 63232228642 Seattle Wa,9.07,TRANS,Both
+22-Mar-04,Julia's On Broadway Seattle Wa,58.17,EATO,Bob
+22-Mar-04,Shell Oil 27440482209 Portland Or,4,TRANS,Both
+18-Mar-04,Shell Oil 27440052002 Seattle Wa,12.22,TRANS,Both
+17-Mar-04,Stita Taxi 206-2469980 Wa,36.6,TRANS,Both
+16-Mar-04,Sunflour Bakery Cafe Seattle Wa,36.88,EATO,Both
+15-Mar-04,Qfc #5807 S1r Seattle Wa,92.87,GROC,Both
+15-Mar-04,Bottleworks Seattle Wa,17.21,EATO,Both
+15-Mar-04,Kozue Japanese Res Seattle Wa,9.72,EATO,Alice
+30-Apr-04,Ajax Airport Parking # Seattle Wa,32,TRANS,Both
+27-Apr-04,Airbart 00499996 Oakland Ca,2,TRANS,Bob
+27-Apr-04,Airbart 00499996 Oakland Ca,2,TRANS,Alice
+27-Apr-04,Truman State Universit Kirksville Mo,10,EDU,Alice
+27-Apr-04,Chez Nous San Francisco Ca,79.79,EATO,Both
+27-Apr-04,Le Petit Robert Llc 2300 Polk St Ca,64.52,EATO,Bob
+27-Apr-04,Joseph Schmidt Confect San Francisco Ca,10.5,EATO,Both
+26-Apr-04,"Eliza's Restaurant, In San Francisco Ca",82.25,EATO,Bob
+26-Apr-04,Cafe De La Presse San Francisco Ca,9.91,EATO,Both
+26-Apr-04,Chesterfield Pharmacy Seattle Wa,24.12,MED,Both
+26-Apr-04,Deluxe Bar & Grill Seattle Wa,55.54,EATO,Bob
+26-Apr-04,Bart-coliseum 5104646979 Ca,20,TRANS,Alice
+23-Apr-04,Eva Seattle Wa,64.71,EATO,Both
+20-Apr-04,Lowe's #4 Seattle Wa,47.71,HOME,Both
+20-Apr-04,Radio Shack 00133181 Seattle Wa,-7.62,HOME,Bob
+19-Apr-04,Bush Garden Seattle Wa,32.82,EATO,Both
+19-Apr-04,Viet-wah Supermkt Sj7 Seattle Wa,9.63,GROC,Both
+19-Apr-04,Radio Shack 00133652 Seattle Wa,22.84,HOME,Bob
+19-Apr-04,U.w. Graduate Admissio 206-5437436 Wa,45,EDU,Alice
+19-Apr-04,City Peoples Garden Seattle Wa,38.85,HOME,Both
+13-Apr-04,"Rei #11, Seattle Seattle Wa",145.4,TOYS,Alice
+13-Apr-04,Qfc #5849 S1r Seattle Wa,52.05,GROC,Both

@@ -1,0 +1,65 @@
+﻿<Window x:Class="C3View.C3Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C3View"
+        mc:Ignorable="d"
+        Title="C3Window" Height="500" Width="800"
+        Icon="Iconka-Cat-Commerce-Money.ico">
+    <TabControl Margin="5" SelectionChanged="TabControl_SelectionChanged">
+        <TabItem Header="Edit">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="EditTabNavColumn" Width="200" />
+                    <ColumnDefinition x:Name="EditTabGridColumn" Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" x:Name="EditTimeFilterLabel" Content="Select time filter:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="EditTimeFilterComboBox" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="EditTimeFilterComboBox_SelectionChanged"/>
+                <StackPanel VerticalAlignment="Bottom">
+                    <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="0,338,0,0" Width="75" Click="btnSave_Click"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" TextWrapping="WrapWithOverflow" Margin="5,5,5,5">
+                    Use this tab to modify any of the predicted values you'd like to correct.
+                    </TextBlock>
+                </StackPanel>
+                <DataGrid SelectionUnit="Cell" DataGridCell.Selected="DataGrid_GotFocus" Grid.Row="0" Grid.Column="1" x:Name="EditTabDatagrid" Margin="5,5,5,5" ItemsSource="{Binding}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="Gainsboro" AlternationCount="2" />
+            </Grid>
+        </TabItem>
+        <TabItem Header="Summary" Height="22" VerticalAlignment="Bottom">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="SummaryTabNavColumn" Width="200" />
+                    <ColumnDefinition x:Name="SummaryTabGridColumn" Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" x:Name="SummaryTimeFilterLabel" Content="Select time filter:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="SummaryTimeFilterComboBox" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="SummaryTimeFilterComboBox_SelectionChanged" />
+                <Label Grid.Row="0" Grid.Column="0" x:Name="SummaryAggregateLabel" Margin="0,50,0,0" Content="Select column to group by:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="SummaryAggregateComboBox" HorizontalAlignment="Left" Margin="0,75,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="SummaryAggregateComboBox_SelectionChanged" />
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" Margin="5,5,5,5">
+                    This tab will display a summary (like sum) for every value in a particular predicted column.
+                </TextBlock>
+                <DataGrid Grid.Row="0" Grid.Column="1" IsReadOnly="True" x:Name="SummaryTabDatagrid" Margin="10" AutoGenerateColumns="True" AutoGeneratingColumn="Datagrid_AutoGeneratingColumn" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="Gainsboro" AlternationCount="2" />
+            </Grid>
+        </TabItem>
+        <TabItem Header="Report">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="ReportTabNavColumn" Width="200" />
+                    <ColumnDefinition x:Name="ReportTabGridColumn" Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" x:Name="ReportGroupByLabel" Content="Group by:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ReportGroupByComboBox" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="ReportGroupByComboBox_SelectionChanged" />
+                <Label Grid.Row="0" Grid.Column="0" x:Name="ReportPeriodLabel" Margin="0,50,0,0" Content="Over period:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ReportPeriodComboBox" HorizontalAlignment="Left" Margin="0,75,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="ReportPeriodComboBox_SelectionChanged" />
+                <Label Grid.Row="0" Grid.Column="0" x:Name="ReportAggregationLabel" Margin="0,100,0,0" Content="Using operation:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ReportAggregationComboBox" HorizontalAlignment="Left" Margin="0,125,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="ReportAggregationComboBox_SelectionChanged" />
+
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" Margin="5,5,5,5">
+                    This tab displays a summary report of all charges on a monthly (or user-defined) basis.
+                </TextBlock>
+                <DataGrid Grid.Row="0" Grid.Column="1" IsReadOnly="True" x:Name="ReportTabDatagrid" Margin="10" AutoGenerateColumns="True" AutoGeneratingColumn="Datagrid_AutoGeneratingColumn" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="Gainsboro" AlternationCount="2" />
+            </Grid>
+        </TabItem>
+    </TabControl>
+
+</Window>
