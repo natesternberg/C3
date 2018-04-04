@@ -1,0 +1,5 @@
+# Credit card categorizer (C3)
+
+C3 is an application I use to categorize line items in credit card bills.  For example, given "Trader Joe's #00001370 Seattle Wa", it outputs "Groceries".  It uses a _supervised_ machine learning algorithm to do this: in other words, it uses my personal history of manually-categorized credit card charges (which I created, painstakingly, for many years before writing this) to predict the category of new charges.
+
+Since my purchasing habits are pretty repetitive, it predicts categories correctly most of the time.  But it makes mistakes, both because the algorithm is not especially sophisticated, and because some purchase descriptions are naturally ambiguous (e.g., a purchase from Amazon could be nearly any category, so the input signal is noisy).  So it also presents a Excel-like UI to display and override its predictions.  There's also a simple pivot table-like interface to help me explore trends over time.
