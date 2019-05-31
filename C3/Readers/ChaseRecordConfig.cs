@@ -7,7 +7,7 @@ namespace C3.Readers
     {
         public ChaseRecordMap()
         {
-            Map(m => m.TransactionTime).Name("Trans Date");
+            Map(m => m.TransactionTime).Name("Transaction Date");
             Map(m => m.Description).Name("Description");
             Map(m => m.Amount).Name("Amount");
             Map(m => m.Amount).ConvertUsing(row => -1 * row.GetField<decimal>("Amount"));
@@ -19,7 +19,7 @@ namespace C3.Readers
         public ChaseRecordConfig()
         {
             this.classMap = new ChaseRecordMap();
-            this.recordsToSkip = new string[] { "AUTOMATIC PAYMENT - THANK" };
+            this.recordsToSkip = new string[] { "AUTOMATIC PAYMENT - THANK", "Payment Thank You - Web" };
         }
     }
 }
