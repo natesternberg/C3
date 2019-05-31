@@ -61,7 +61,6 @@ namespace C3UnitTests
             var records = KeyValuePairFromTsv(bookExample);
             var classifier = ClassifierFactory.GetClassifierByName<Genre>("NaiveBayesClassifier");
             classifier.Train(records);
-            //NaiveBayesClassifier <Genre> nbc = new NaiveBayesClassifier<Genre>();
 
             Assert.AreEqual(classifier.Categorize("Curtains and Drapes").Category, Genre.INTERIORDECORATING);
             Assert.AreEqual(classifier.Categorize("The Ventilation of Bridges").Category, Genre.ENGINEERING);

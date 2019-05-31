@@ -2,7 +2,6 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Diagnostics;
 
 using C3;
 using C3.Readers;

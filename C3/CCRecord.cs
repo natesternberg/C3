@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Data;
 
 [assembly: InternalsVisibleTo("C3UnitTests")]
-//[assembly: InternalsVisibleTo("C3View")]
 namespace C3
 {
     public class CCRecord
@@ -27,8 +26,14 @@ namespace C3
 
         public CCRecord(DataRow dataRow, C3Configuration config)
         {
-            if (dataRow == null) throw new InvalidOperationException($"{nameof(dataRow)} must be provided.");
-            if (config == null) throw new InvalidOperationException($"{nameof(config)} must be provided.");
+            if (dataRow == null)
+            {
+                throw new InvalidOperationException($"{nameof(dataRow)} must be provided.");
+            }
+            if (config == null)
+            {
+                throw new InvalidOperationException($"{nameof(config)} must be provided.");
+            }
             this.TransactionTime = dataRow.Field<DateTime>(Consts.TRANSACTIONTIME);
             this.Description = dataRow.Field<string>(Consts.DESCRIPTION);
             this.Amount = dataRow.Field<decimal>(Consts.AMOUNT);

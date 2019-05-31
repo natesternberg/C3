@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace C3
 {
@@ -20,7 +18,7 @@ namespace C3
         private Dictionary<T, double> categoryProbability;
         private Dictionary<string, double> termProbability;
         private Dictionary<T, Dictionary<string, double>> conditionalProbability;
-        private Func<string, string[]> tokenizer = x => x.Split(' ');
+        private readonly Func<string, string[]> tokenizer = x => x.Split(' ');
 
         public NaiveBayesClassifier()
         {
@@ -56,6 +54,10 @@ namespace C3
         }
 
 
+        /// <summary>
+        /// Calculate raw probabilities for all tokens and categories, and all conditional probabilities for each token
+        /// </summary>
+        /// <param name="data">A List of KeyValuePair objects each containing a token and a category</param>
         public void Train(List<KeyValuePair<string, T>> data)
         {
             var catCount = new Dictionary<T, int>();
@@ -109,10 +111,17 @@ namespace C3
             }
         }
 
+        /// <summary>
+        /// Return the most likely category for the given input
+        /// </summary>
+        /// <param name="input">The line item to categorize</param>
+        /// <returns>The most likely category (of type T)</returns>
         public Classification<T> Categorize(string input)
         {
             if (this.termProbability.Count == 0 || this.categoryProbability.Count == 0 || this.conditionalProbability.Count == 0)
+            {
                 throw new InvalidOperationException("Classifier must be initialized with Train() before calling Categorize().");
+            }
             double highestProbSoFar = double.MinValue;
             T bestCategorySoFar = default(T);
             foreach (T category in categoryProbability.Keys)

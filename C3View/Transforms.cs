@@ -40,10 +40,14 @@ namespace C3View
             return table;
         }
 
-        // Generate the table to populate the Report tab, sort of a pivot table
-        // * periodGrouper groups datetimes into time ranges (i.e. generates row headers)
-        // * predictedColumn specifies which predictedColumn to use as the column headers
-        // * aggregation aggregates all grouped prices (usually with Sum)
+        /// <summary>
+        /// Generate the table to populate the Report tab, sort of a pivot table
+        /// </summary>
+        /// <param name="currentDataTable"></param>
+        /// <param name="periodGrouper">Function to group datetimes into time ranges (i.e. generates row headers)</param>
+        /// <param name="predictedColumn">Specifies which predictedColumn to use as the column headers</param>
+        /// <param name="aggregation">Function to aggregate grouped prices (usually with Sum)</param>
+        /// <returns>A DataTable to display in the Report tab</returns>
         public static DataTable GetPeriodSummary(DataTable currentDataTable, Func<DateTime, DateTime> periodGrouper,
             C3PredictedColumn predictedColumn, Func<IEnumerable<decimal>, decimal> aggregation)
         {
@@ -83,7 +87,7 @@ namespace C3View
             return dt;
         }
 
-        public static EnumerableRowCollection<DataRow> GetFilteredRecordSet(DataTable currentDataTable, DateTimeRange range)
+        internal static EnumerableRowCollection<DataRow> GetFilteredRecordSet(DataTable currentDataTable, DateTimeRange range)
         {
             return currentDataTable.AsEnumerable()
                 .Where(row => row.Field<DateTime>(Consts.TRANSACTIONTIME) >= range.StartTime

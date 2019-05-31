@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -11,13 +11,24 @@ namespace C3UnitTests
     [TestClass]
     public class CCRecordSetTests : C3UnitTests
     {
-        private static string serializationOutput = Path.GetTempFileName();
+        private static readonly string serializationOutput = Path.GetTempFileName();
 
         [TestCleanup]
         private void Cleanup()
         {
             if (File.Exists(serializationOutput))
-                File.Delete(serializationOutput);
+            {
+                try
+                {
+                    File.Delete(serializationOutput);
+                }
+                // Oh well
+                catch (Exception)
+                {
+                    Utils.Output($"Unable to delete temp file {serializationOutput} during unit tests.");
+                }
+            }
+        
         }
 
         [TestMethod]

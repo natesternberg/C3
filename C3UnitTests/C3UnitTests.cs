@@ -3,7 +3,6 @@
 using System;
 
 using C3;
-using C3.Readers;
 
 namespace C3UnitTests
 {

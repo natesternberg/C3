@@ -1,5 +1,9 @@
 ﻿using CommandLine;
 using CommandLine.Text;
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace C3App
 {
@@ -7,16 +11,18 @@ namespace C3App
 
     class Options
     {
-        [Option('i', "input", HelpText = "File with new records to import")]
-        public string InputFile { get; set; }
+        public string commandTypeNames;
 
-        [Option("c", DefaultValue = -1, Required = true, HelpText = "Command to run")]
+        [Option('c', "command", DefaultValue = CommandType.VIEW, Required = true, HelpText = "Command to run ('VIEW' or 'IMPORT')")]
         public CommandType Command { get; set; }
 
-        [Option('b', "base", Required = true, HelpText = "File with existing records to append to")]
+        [Option('i', "input", HelpText = "Path to file with new records to import")]
+        public string InputFile { get; set; }
+
+        [Option('b', "base", Required = true, HelpText = "Path to file with existing records to append to")]
         public string BaseFile { get; set; }
 
-        [Option('t', "type", HelpText = "Bank record format, e.g., USBank, Chase")]
+        [Option('t', "type", HelpText = "Bank record format ('USBank' or 'Chase')")]
         public string BankType { get; set; }
 
         [HelpOption]
@@ -24,6 +30,11 @@ namespace C3App
         {
             HelpText ht = HelpText.AutoBuild(new Options());
             return ht.ToString();
+        }
+
+        public Options()
+        {
+            this.commandTypeNames = string.Join(",", Enum.GetValues(typeof(CommandType)).Cast<CommandType>().Select(ct => ct.ToString()));
         }
     }
 }

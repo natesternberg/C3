@@ -11,10 +11,6 @@ namespace C3UnitTests
         [TestMethod]
         public void CreateRecordReaders()
         {
-            //var r1 = RecordReaderFactory.GetRecordReaderByName("USBank");
-            //var r2 = RecordReaderFactory.GetRecordReaderByName("Chase");
-            //Assert.IsTrue(r1 is USBankRecordReader);
-            //Assert.IsTrue(r2 is ChaseRecordReader);
             var c1 = BankConfigFactory.GetByName("USBank");
             var c2 = BankConfigFactory.GetByName("Chase");
             Assert.IsTrue(c1 is USBankRecordConfig);

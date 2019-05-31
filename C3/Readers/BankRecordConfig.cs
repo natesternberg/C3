@@ -6,7 +6,7 @@ namespace C3.Readers
     {
         // Class that maps bank's column definitions to a CCRecord
         public ClassMap<CCRecord> classMap;
-        // Strings that, if present in the description, should be skipped
+        // Strings that, if present in the description, indicates that the row should be skipped
         public string[] recordsToSkip;
     }
 }
