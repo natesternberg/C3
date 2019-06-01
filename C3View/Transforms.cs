@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 using C3;
 
+[assembly: InternalsVisibleTo("C3UnitTests")]
 namespace C3View
 {
     public struct CategoryAndValue
@@ -61,12 +63,12 @@ namespace C3View
                 .ToDictionary(rec => rec.k, rec => rec.s);
 
             DataTable dt = new DataTable();
-            dt.Columns.Add("Period start", typeof(DateTime));
+            dt.Columns.Add(Consts.PERIOD_START, typeof(DateTime));
             foreach (string c in predictedColumn.validValues)
             {
                 dt.Columns.Add(c.ToString(), typeof(decimal));
             }
-            dt.Columns.Add("Period total", typeof(decimal));
+            dt.Columns.Add(Consts.PERIOD_TOTAL, typeof(decimal));
             var groupQuery = groups.Keys.Select(g => g.period).Distinct().OrderBy(g => g);
             foreach (DateTime period in groupQuery)
             {
