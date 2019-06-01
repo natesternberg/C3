@@ -25,5 +25,8 @@
         public const string TIMEEXPR_YTD = "Year to date";
         public const string TIMEEXPR_LASTYEAR = "Last year";
         public const string TIMEEXPR_FOREVER = "Forever";
+
+        public const string PERIOD_START = "Period start";
+        public const string PERIOD_TOTAL = "Period total";
     }
 }

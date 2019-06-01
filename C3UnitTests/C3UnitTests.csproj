@@ -77,6 +77,10 @@
     <EmbeddedResource Include="Resources\charges.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\C3View\C3View.csproj">
+      <Project>{f04521ce-76e8-49f4-b60a-d79b056944ac}</Project>
+      <Name>C3View</Name>
+    </ProjectReference>
     <ProjectReference Include="..\C3\C3.csproj">
       <Project>{6820f4bc-5c56-48a0-b1a1-1c4f722e5153}</Project>
       <Name>C3</Name>
